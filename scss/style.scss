@@ -1,0 +1,69 @@
+//import
+@import "html/home";
+@import "html/contacto";
+@import "html/ubicacion";
+@import "html/carta";
+@import "html/resena";
+//variable
+@import "../scss/utilidades.scss/variables";
+@import "../scss/utilidades.scss/mixin";
+@import "../scss/utilidades.scss/extend";
+@import "../scss/utilidades.scss/mdq";
+
+/*reset*/
+*{
+    @include reset;
+}
+/* estilos generico*/
+body{
+    background-color: $color-principal;
+    font-family:'Roboto', sans-serif;
+}
+/*estilo de header*/
+header{
+    background-color: $color-secundario;
+    text-align: center;
+    padding: 10px;
+    nav{
+        ul{
+            list-style: none;
+            li{
+                display: inline-block;
+                margin-left: 15px;
+                a{
+                    text-decoration: none;
+                    color: $color-terciario;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+/*estilo de elementos*/
+h1{
+    color: $color-terciario;
+    font-family: cursive;
+}
+ h2{
+    color: $color-terciario;
+    font-family: cursive;
+}
+/* estilo main*/
+main{
+    text-align: center;
+    padding: 40px;
+}
+/* estilo footer*/
+footer{
+    background-color: $color-footer;
+    text-align: center;
+    margin-top: 40px;
+    a{
+        img{
+            width: 5%;
+        }
+    }
+    div{
+        background-color: $color-derechos;
+    }
+}

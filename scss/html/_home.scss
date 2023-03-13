@@ -1,0 +1,18 @@
+/*estilos de main de home(index)*/
+main{
+    .contenedorUno{
+        .titulo{
+            @extend %titulo;
+        }
+    }
+    .contenedorDos{
+        img{
+            width: 100%;
+        }
+    }
+    section{
+        p{
+            margin-bottom: 35px;
+        }
+    }
+}

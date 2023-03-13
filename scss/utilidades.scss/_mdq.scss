@@ -1,0 +1,35 @@
+///* Media queries*/
+/* MQ celular*/
+@media only screen and (max-width: 400px) {
+    main p{
+        color: goldenrod;
+        .col{
+            padding: 5px;
+        }
+    }
+}
+
+/*MQ tablet*/
+@media only screen and (min-width:570px) and (max-width: 1224px) {
+    main .col{
+        padding: 10px;
+        display: grid;
+        grid-template-rows: repeat(1, 3fr) ;
+        grid-template-columns: repeat(1, 3fr) ;
+   }
+}
+
+/*MQ desktop*/
+@media only screen and (min-width: 1225px) and (max-width:1600px){
+    main .col{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        p{
+            color: goldenrod;
+            font-family: bolder;
+        }
+    }
+}

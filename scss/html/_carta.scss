@@ -1,0 +1,32 @@
+/*estilos de main carta*/
+main{
+    align-items: center;
+    align-content: center;
+    //animacion
+    .carousel-item{
+        animation-name: ani_portada;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-delay: 4s;
+    }
+}
+@keyframes ani_portada {
+    0%{
+        transform: scale(1);
+        opacity: 100%;
+    }
+    15%{
+        transform: scale(1.2);
+        opacity: 75%;
+    }
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+        opacity: 80%;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
